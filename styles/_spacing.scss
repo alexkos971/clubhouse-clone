@@ -1,0 +1,98 @@
+$sides: (
+    'top': 't',
+    'left': 'l',
+    'bottom': 'b',
+    'right': 'r'
+);
+
+@each $side, $letter in $sides {
+    @for $px  from 0 through 10 {
+        .m#{$letter}-#{$px * 5} {
+            margin-#{$side}: #{$px * 5}px !important; 
+        }
+
+        .p#{$letter}-#{$px * 5} {
+            padding-#{$side}: #{$px * 5}px !important; 
+        }
+    }
+}
+
+
+.flex-direction-column {
+    flex-direction: column;
+}
+.p-30 {
+    padding: var(--spacing--30);
+}
+
+.pv-30 {
+    padding: 0 var(--spacing--30);
+}
+
+.d-ib {
+    display: inline-block;
+}
+
+.tac {
+    text-align: center;
+}
+
+.cup {
+    cursor: pointer;
+}
+
+.d-ib {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.m-auto {
+    margin: 0 auto !important;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.fw-w {
+    flex-wrap: wrap;
+}

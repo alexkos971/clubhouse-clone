@@ -1,0 +1,28 @@
+.block {
+    display: block;
+}
+.whiteBlock {
+    width: 460px;
+}
+
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e3e3e3;
+    align-items: center;
+    padding: 0 25px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 20px;
+
+    img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.field {
+    border: none;
+}
